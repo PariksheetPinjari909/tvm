@@ -15,3 +15,5 @@ from .upsampling_python import upsampling_python
 from .reorg_python import reorg_python
 from .region_python import region_python
 from .shortcut_python import shortcut_python
+from .grouped_conv2d_python import grouped_conv2d_nchw_python, grouped_conv2d_hwcn_python, grouped_conv2d_nhwc_python
+from .lrn_python import lrn_nchw_python
