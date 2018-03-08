@@ -17,3 +17,4 @@ from .region_python import region_python
 from .shortcut_python import shortcut_python
 from .grouped_conv2d_python import grouped_conv2d_nchw_python, grouped_conv2d_hwcn_python, grouped_conv2d_nhwc_python
 from .lrn_python import lrn_nchw_python
+from .l2norm_python import l2norm_nchw_python

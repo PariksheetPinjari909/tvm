@@ -193,6 +193,23 @@ def schedule_lrn(outs):
     return _default_schedule(outs, False)
 
 @tvm.target.generic_func
+def schedule_l2norm(outs):
+    """Schedule for lrn
+
+    Parameters
+    ----------
+    outs: Array of Tensor
+          The computation graph description of lrn
+          in the format of an array of tensors.
+
+    Returns
+    -------
+    sch: Schedule
+        The computation schedule for the op.
+    """
+    return _default_schedule(outs, False)
+
+@tvm.target.generic_func
 def schedule_pool(outs):
     """Schedule for pool
 
