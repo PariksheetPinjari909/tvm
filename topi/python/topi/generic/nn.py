@@ -229,3 +229,20 @@ def schedule_binary_dense(outs):
         The computation schedule for the op.
     """
     return _default_schedule(outs, False)
+
+
+@tvm.target.generic_func
+def schedule_grouped_conv2d(outs):
+    """Schedule for grouped_conv2d
+    Parameters
+    ----------
+    outs: Array of Tensor
+          The computation graph description of grouped_conv2d
+          in the format of an array of tensors.
+
+    Returns
+    -------
+    sch: Schedule
+        The computation schedule for the op.
+    """
+    return _default_schedule(outs, False)
